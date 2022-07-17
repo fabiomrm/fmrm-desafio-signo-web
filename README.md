@@ -52,6 +52,25 @@ Rodar o comando:
 ```
 npx prisma migrate
 ```
+### Backend - Models
+
+Foram criadas duas tabelas no banco de dados (models Poll e Option);
+** A relação entre as tabelas é de *one to many*
+```
+**polls**
+id VARCHAR PK
+title VARCHAR
+begin_date DATETIME
+end_date DATETIME
+```
+
+```
+**options**
+id VARCHAR PK
+text VARCHAR
+vote_count INTEGER
+pollId VARCHAR FK
+```
 
 ### Backend - Endpoints📝
 
