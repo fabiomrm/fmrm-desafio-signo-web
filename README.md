@@ -50,7 +50,7 @@ Para instalar:
 
 Rodar o comando: 
 ```
-npx prisma migrate
+npm run dev
 ```
 ### Backend - Models
 
