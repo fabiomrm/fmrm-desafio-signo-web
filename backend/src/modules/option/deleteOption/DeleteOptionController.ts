@@ -10,7 +10,7 @@ export class DeleteOptionController {
       await deleteOptionUseCase.execute({ optionId });
       return res.status(204).send();
     } catch (e) {
-      return res.status(404).json({ error: "Option not found!" });
+      return res.status(500).json({ error: "Internal server error!" });
     }
   }
 }

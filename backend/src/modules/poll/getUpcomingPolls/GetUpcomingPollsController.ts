@@ -3,10 +3,13 @@ import { GetUpcomingPollsUseCase } from "./GetUpcomingPollsUseCase";
 
 export class GetUpcomingPollsController {
   async handle(req: Request, res: Response) {
-    const getUpcomingPollsUseCase = new GetUpcomingPollsUseCase();
+    try {
+      const getUpcomingPollsUseCase = new GetUpcomingPollsUseCase();
+      const result = await getUpcomingPollsUseCase.execute();
 
-    const result = await getUpcomingPollsUseCase.execute();
-
-    return res.json(result);
+      return res.json(result);
+    } catch (e) {
+      return res.status(500).json({ message: "Internal server error!" });
+    }
   }
 }

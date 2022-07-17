@@ -5,10 +5,15 @@ export class CreateOptionController {
 
   async handle(req: Request, res: Response) {
     const { text, pollId } = req.body;
-    const createOptionUseCase = new CreateOptionUseCase();
+    try {
 
-    const result = await createOptionUseCase.execute({ text, pollId });
+      const createOptionUseCase = new CreateOptionUseCase();
+      const result = await createOptionUseCase.execute({ text, pollId });
+      return res.status(201).json(result);
+    } catch (e) {
+      return res.status(500).json({ message: "Internal server error!" })
+    }
 
-    return res.status(201).json(result);
+
   }
 }

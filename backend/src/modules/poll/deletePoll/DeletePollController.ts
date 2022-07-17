@@ -9,7 +9,7 @@ export class DeletePollController {
       await deletePollUseCase.execute({ pollId });
       return res.status(204).send();
     } catch (e) {
-      return res.status(400).json({ message: "Poll not found!" })
+      return res.status(500).json({ message: "Poll not found!" })
     }
   }
 }

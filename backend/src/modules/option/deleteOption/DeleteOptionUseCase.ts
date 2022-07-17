@@ -6,10 +6,14 @@ interface IDeleteOption {
 
 export class DeleteOptionUseCase {
   async execute({ optionId: id }: IDeleteOption) {
-    await prisma.option.delete({
-      where: {
-        id
-      }
-    })
+    try {
+      await prisma.option.delete({
+        where: {
+          id
+        }
+      })
+    } catch (e) {
+      throw new Error("Option does not exist!")
+    }
   }
 }
