@@ -23,7 +23,7 @@ Para instalar:
 
 Criar arquivo .env copiando e colando o .env.example e substituir a variável DATABASE_URL com suas credenciais
 
-**alterar usuário, senha, porta e banco de dados para os compatíveis com o mySQL.
+**alterar usuário, senha, porta e banco de dados para os compatíveis com o mySQL.**
 
 Para resetar o Prisma com as migrations: 
 ```
@@ -46,7 +46,7 @@ Para instalar:
   npm init
 ```
 
-**alterar a variável VITE_BACKEND_URL para a utilizada pelo backend (originalmente foi http://localhost:3334).
+**alterar a variável VITE_BACKEND_URL para a utilizada pelo backend (originalmente foi http://localhost:3334).**
 
 Rodar o comando: 
 ```
@@ -55,7 +55,7 @@ npx prisma migrate
 ### Backend - Models
 
 Foram criadas duas tabelas no banco de dados (models Poll e Option);
-** A relação entre as tabelas é de *one to many*
+**A relação entre as tabelas é de *one to many***
 ```
 **polls**
 id VARCHAR PK
