@@ -12,6 +12,12 @@
 - MySQL
 - Prisma ORM para manipulação
 
+### Layout - Web
+![Layout web]('layout-web.png')
+
+### Layout - Mobile
+![Layout mobile]('layout-mobile.png')
+
 ## Como rodar o Projeto?
 
 ### Backend
