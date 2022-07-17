@@ -13,7 +13,7 @@
 - Prisma ORM para manipulação
 
 ### Layout - Web
-![Layout web]('https://github.com/fabiomrm/fmrm-desafio-signo-web/blob/main/layout-web.png')
+<img src="https://github.com/fabiomrm/fmrm-desafio-signo-web/blob/main/layout-mobile.png"/>
 
 ### Layout - Mobile
 ![Layout mobile]('https://github.com/fabiomrm/fmrm-desafio-signo-web/blob/main/layout-mobile.png')
