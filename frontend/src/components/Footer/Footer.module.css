@@ -70,4 +70,8 @@
   .info {
     justify-content: center;
   }
+
+  .info p {
+    font-size: .4rem;
+  }
 }
