@@ -83,8 +83,8 @@ export function CreatePoll() {
       endDate,
       options
     }
-
-
+    console.log(newPoll)
+    return;
     fetch("http://localhost:3334/polls", {
       method: "POST",
       headers: {

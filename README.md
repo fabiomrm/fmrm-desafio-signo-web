@@ -32,10 +32,6 @@ npx prisma migrate reset
 
 Rodar o comando: 
 ```
-npx prisma migrate dev
-```
-
-```
 yarn dev
 ```
 
@@ -43,7 +39,7 @@ yarn dev
 
 Para instalar:
 ```
-  npm init
+  npm i
 ```
 
 **alterar a variável VITE_BACKEND_URL para a utilizada pelo backend (originalmente foi http://localhost:3334).**
@@ -72,9 +68,79 @@ vote_count INTEGER
 pollId VARCHAR FK
 ```
 
+### DADOS PARA TESTE:
+
+#### Enquete em andamento
+```json
+{
+    "title": "Biscoito ou bolacha?", 
+    "beginDate": "2022-07-15T16:00", 
+    "endDate": "2022-07-27T21:00", 
+    "options": [
+        {
+            "text":"Biscoito, óbvio 🍪"
+        },
+        {
+            "text":"Bolacha! 🍪"
+        },
+        {
+            "text": "Tanto faz 🤷"
+        }
+    ]
+}
+```
+#### Enquete não iniciada
+```json
+{
+    "title": "Qual o melhor recheio de pastel?", 
+    "beginDate": "2022-08-01T04:45", 
+    "endDate": "2022-08-09T13:53", 
+    "options": [
+        {
+            "text": "Queijo 🧀"
+        },
+        {
+            "text": "Carne moída 🥩"
+        },
+        {
+            "text": "Frango 🐔"
+        },
+        {
+            "text": "Coco 🥥"
+        }
+    ]
+}
+```
+
+#### Enquete finalizada
+```json
+{
+    "title": "Melhor linguagem de programação?", 
+    "beginDate": "2022-01-01T14:00", 
+    "endDate": "2022-03-17T23:00", 
+    "options": [
+        {
+            "text": "PHP 🐘"
+        },
+        {
+            "text": "Java ☕"
+        },
+        {
+            "text": "Javascript 🤓"
+        },
+        {
+            "text": "Python 🐍"
+        },
+        {
+            "text": "Ruby 💎"
+        }
+    ]
+}
+```
+
 ### Backend - Endpoints📝
 
-~Nem todos os Endpoints foram consumidos pelo frontend da aplicação.
+*Nem todos os Endpoints foram consumidos pelo frontend da aplicação pela própria regra de negócio do projeto.*
 
 #### Enquetes (Polls)
 - [X] GET /polls - retorna todas as enquetes
