@@ -1,0 +1,23 @@
+.header {
+  height: 3rem;
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  box-shadow: 1px 1px 2px var(--pink-500);
+}
+
+.header strong:hover {
+  color: var(--pink-500);
+}
+
+.header .addImage {
+  width: 2rem;
+  height: 2rem;
+  border-radius: .8rem;
+}
+
+.header .addImage:hover {
+  color: var(--pink-500);
+  transform: scale(1.09);
+
+}

@@ -1,0 +1,150 @@
+.container {
+  max-width: 1020px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  padding: 1rem;
+  background-color: var(--white);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.formGroup label {
+  font-size: .6rem;
+  color: var(--black);
+}
+
+.formGroup input {
+  height: 1rem;
+  font-size: .6rem;
+}
+
+.dateArea {
+  margin-top: .5rem;
+  display: flex;
+  gap: .3rem;
+}
+
+.dateArea label {
+  font-size: .5rem;
+  color: var(--black);
+}
+
+.dateArea input {
+  font-size: .5rem;
+}
+
+
+.options {
+  margin-top: .8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+p.options  {
+  color: var(--black);
+  font-size: .6rem;
+  border-bottom: 1px solid var(--gray-300);
+  padding-bottom: .3rem;
+  margin-bottom: .3rem;
+}
+
+.optionsArea {
+  gap: 1rem;
+}
+
+.optionArea {
+  position:relative;
+  display: flex;
+  margin:0;
+  margin-bottom: .8rem;
+}
+
+.optionArea input {
+  border:0;
+  filter: drop-shadow(1px 1px 1px var(--pink-500));
+  height: 1rem;
+  font-size: .6rem;
+  flex: 1;
+}
+
+.optionArea input:focus {
+  outline:0;
+  filter: drop-shadow(2px 2px 1px var(--pink-500));
+  height: 1.1rem;
+}
+
+.optionArea .deleteIcon {
+  position:absolute;
+  right: .2rem;
+  height: 1rem;
+  width: 1rem;
+  color: var(--black);
+}
+
+.optionArea .deleteIcon:hover {
+  cursor: pointer;
+  transform: scale(1.09);
+}
+
+.btnArea {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.submitBtn {
+  font-size: .6rem;
+  padding: .5rem 3rem;
+  background-color: var(--black);
+  color: var(--white)
+}
+
+.submitBtn:hover {
+  background-color: var(--gray-100);
+  color: var(--black);
+}
+
+.submitBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+
+.addOption {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.addOption button{
+  border: 0;
+  background: transparent;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.addOption .addOptionIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.addOption button:hover{
+  transform: scale(1.09);
+  color: var(--pink-500);
+}

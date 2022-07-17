@@ -1,0 +1,21 @@
+.progressBar {
+  height: 1rem;
+  width: 100%;
+}
+
+.progressBarInner {
+  position: relative;
+  height: 0.8rem;
+  background-color: var(--pink-500);
+  border-top-right-radius: .1rem;
+  border-bottom-right-radius: .1rem;
+  transition: width ease 300ms;
+}
+
+.progressBarInner span {
+  position: absolute;
+  font-size: .5rem;
+  color: var(--gray-100);
+  right: 1px;
+  top: 20%;
+}
