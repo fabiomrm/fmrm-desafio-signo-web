@@ -13,10 +13,10 @@
 - Prisma ORM para manipulação
 
 ### Layout - Web
-<img src="https://github.com/fabiomrm/fmrm-desafio-signo-web/blob/main/layout-mobile.png"/>
+<img src="https://github.com/fabiomrm/fmrm-desafio-signo-web/blob/main/layout-web.png"/>
 
 ### Layout - Mobile
-![Layout mobile]('https://github.com/fabiomrm/fmrm-desafio-signo-web/blob/main/layout-mobile.png')
+<img src="https://github.com/fabiomrm/fmrm-desafio-signo-web/blob/main/layout-mobile.png"/>
 
 ## Como rodar o Projeto?
 
