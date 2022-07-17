@@ -21,15 +21,21 @@ Para instalar:
   yarn 
 ```
 
-Para iniciar o Prisma: 
+Criar arquivo .env copiando e colando o .env.example e substituir a variável DATABASE_URL com suas credenciais
+~alterar usuário, senha, porta e banco de dados para os compatíveis com o mySQL.
+
+Para resetar o Prisma com as migrations: 
 ```
-npx prisma init
+npx prisma migrate reset
 ```
-*alterar usuário, senha, porta e banco de dados para os compatíveis com o mySQL.
 
 Rodar o comando: 
 ```
-npx prisma migrate
+npx prisma migrate dev
+```
+
+```
+yarn dev
 ```
 
 ### Frontend
@@ -39,7 +45,7 @@ Para instalar:
   npm init
 ```
 
-*alterar a variável PORT para a utilizada pelo backend (originalmente foi a 3334).
+~alterar a variável VITE_BACKEND_URL para a utilizada pelo backend (originalmente foi http://localhost:3334).
 
 Rodar o comando: 
 ```
@@ -48,7 +54,7 @@ npx prisma migrate
 
 ### Backend - Endpoints📝
 
-*Nem todos os Endpoints foram consumidos pelo frontend da aplicação.
+~Nem todos os Endpoints foram consumidos pelo frontend da aplicação.
 
 #### Enquetes (Polls)
 - [X] GET /polls - retorna todas as enquetes
