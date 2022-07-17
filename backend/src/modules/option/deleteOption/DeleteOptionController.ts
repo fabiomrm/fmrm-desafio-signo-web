@@ -6,11 +6,9 @@ export class DeleteOptionController {
     const { id: optionId } = req.params;
 
     const deleteOptionUseCase = new DeleteOptionUseCase();
-    try {
-      await deleteOptionUseCase.execute({ optionId });
-      return res.status(204).send();
-    } catch (e) {
-      return res.status(500).json({ error: "Internal server error!" });
-    }
+    await deleteOptionUseCase.execute({ optionId });
+
+    return res.status(204).send();
+
   }
 }

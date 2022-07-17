@@ -19,7 +19,6 @@ export class UpdatePollUseCase {
         end_date: new Date(endDate)
       }
     })
-
     return updatedPoll;
   }
 }

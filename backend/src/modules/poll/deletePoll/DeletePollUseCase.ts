@@ -7,14 +7,10 @@ interface IDeletePoll {
 export class DeletePollUseCase {
   async execute({ pollId: id }: IDeletePoll) {
 
-    try {
-      return await prisma.poll.delete({
-        where: {
-          id
-        }
-      })
-    } catch (e) {
-      throw new Error("Poll does not exist!")
-    }
+    return await prisma.poll.delete({
+      where: {
+        id
+      }
+    })
   }
 }
